@@ -43,3 +43,30 @@ console.log(typeof heroes) // return type of array is object only
 console.log(typeof myFunction) // datatype of function Variable is object Function
 
 
+// ******************************Memory Allocation ***************
+
+// Stack (primitive), Heap (non-primitive)
+// in Stack when primitive datatype get store, we get a copy
+// in Heap when non-primitive datatype get store, we get a reference or address of the original, so we can change the original values
+
+
+let myYoutubeName = "tejaskumare.com"
+let anotherName =myYoutubeName
+anotherName = "chaicode"
+
+console.log(myYoutubeName)
+console.log(anotherName)
+
+let user1 = {
+    email : "user@google",
+    upi :  "user@pay"
+}
+
+
+let user2 = user1
+
+user2.email = "hitesh@google.com"
+
+console.log(user1.email)
+console.log(user2.email)
+
